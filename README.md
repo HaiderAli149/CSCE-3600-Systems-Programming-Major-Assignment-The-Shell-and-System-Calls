@@ -23,11 +23,11 @@ Each member was responsible for one of the built in functions. The project is br
 
 - **`builtin_functions.c` – myhistory command**  
   *Implemented by: Oyindamola Bade-Ojo*  
-  - incomplete
+  - 
 
 - **`builtin_functions.c` – path command**  
   *Implemented by: Hasan Walid*  
-  - incomplete
+  - 
 
 - **`main.c` – Main Shell Engine**  
   *Implemented by: Haider Beg & Jake Moseley*  
