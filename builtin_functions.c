@@ -4,34 +4,42 @@
 #include <unistd.h>
 #include "builtin_functions.h"
 
+extern int should_exit;
+
 // Function to change the current directory
 // Handles "cd" command with no arguments, one argument, or too many arguments
-void builtin_functions_cd(char **args, int argCounter) 
+void builtin_functions_cd(char **args, int argCounter)
 {
-    if (argCounter == 1) 
+    if (argCounter == 1)
     {
         char *home = getenv("HOME");
-        if (home == NULL) 
+        if (home == NULL)
         {
             fprintf(stderr, "cd: HOME not set\n");
-        } 
-        else 
+        }
+        else
         {
-            if (chdir(home) != 0) 
+            if (chdir(home) != 0)
             {
                 perror("cd");
             }
         }
-    } 
-    else if (argCounter == 2) 
+    }
+    else if (argCounter == 2)
     {
-        if (chdir(args[1]) != 0) 
+        if (chdir(args[1]) != 0)
         {
             perror("cd");
         }
-    } 
-    else 
+    }
+    else
     {
         fprintf(stderr, "cd: too many arguments\n");
     }
 }
+
+//function to exit
+void shell_exit() {
+    should_exit = 1;
+}
+
