@@ -21,13 +21,13 @@ Each member was responsible for one of the built in functions. The project is br
   *Implemented by: Jake Moseley*  
   Exits the shell after completing all commands on the current line. Uses a global flag to ensure proper termination.
 
-- **`builtin_functions.c` – myhistory command**  
+- **`myhistory.c` – myhistory command**  
   *Implemented by: Oyindamola Bade-Ojo*  
-  - 
+  - Handles myhistory
 
-- **`builtin_functions.c` – path command**  
+- **`path.c` – path command**  
   *Implemented by: Hasan Walid*  
-  - 
+  - Handles path
 
 - **`main.c` – Main Shell Engine**  
   *Implemented by: Haider Beg & Jake Moseley*  
