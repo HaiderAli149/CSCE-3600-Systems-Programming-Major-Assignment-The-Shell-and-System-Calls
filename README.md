@@ -22,11 +22,11 @@ Each member was responsible for one of the built in functions. The project is br
   Exits the shell after completing all commands on the current line. Uses a global flag to ensure proper termination.
 
 - **`builtin_functions.c` – myhistory command**  
-  *Implemented by: Hasan Walid*  
+  *Implemented by: Oyindamola Bade-Ojo*  
   - incomplete
 
 - **`builtin_functions.c` – path command**  
-  *Implemented by: Oyindamola Bade-Ojo*  
+  *Implemented by: Hasan Walid*  
   - incomplete
 
 - **`main.c` – Main Shell Engine**  
